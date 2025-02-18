@@ -1,0 +1,226 @@
+*{ 
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; 
+  background-color: #111;
+  color: #dadada; 
+}
+
+.navbar{
+  width: 100%;
+  height: 90px;  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  font-family: "Nunito Sans"  ; 
+}
+
+ul{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.navbar li{
+  font-size: 44px;
+  list-style-type: none;
+  font-weight: 500;
+  /* display: inline-block; */
+  /* width: 100%; */
+  align-items: center;
+  /* justify-content: space-between; */
+}
+
+.navbar li a{
+  text-decoration: none;
+  color: #dadada;
+}
+
+.line{
+  border: 1px solid #dadada;
+  width: 97%; 
+  display: flex; 
+  align-items: center; 
+  justify-self: center;
+}
+
+.main-sec-div{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.row{
+  padding: 40px;
+}
+
+.tdimension {
+	width: 420px;
+	height: 300px;
+	margin: 20px auto 40px auto;
+	perspective: 1000px;
+}
+.tdimension a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: url("/Images/javascript\ Certification\ .jpg");
+	background-size: cover;
+  background-position: center;
+	transform-style: preserve-3d;
+	transform: rotateX(70deg);
+	transition: all 0.8s;	
+}
+.second a{
+  background: url("/Images/GuviCertification\ -\ 1C87aTp2q3E575911X\ \(1\).png");
+  background-size: cover;
+  background-position: center;
+}
+.new a{
+  background: url("/Images/WhatsApp\ Image\ 2025-01-27\ at\ 20.06.18_6fd12731.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.third a{
+  background: url("/Images/python.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+.fourth a{
+  background: url("/Images/second\ kgcoding.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+.fifth a{
+  background: url("/Images/kgcoding.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+.six a{
+  background: url("/Images/hackathoncer.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.tdimension:hover a {
+	transform: rotateX(20deg); 
+  background-size: cover;
+  background-position: center;	
+}	
+.tdimension a:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background: linear-gradient(#dadada, #111);    
+   	transform: rotateX(90deg);
+    transform-origin: bottom;
+}
+ 
+.footer{
+  width: 100%;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+}
+
+.footer ul{
+  display: block;
+  justify-content: center; 
+  width: 40%; 
+}
+
+.footer li{
+  list-style-type: none;
+  font-size: 27px;
+  font-weight: 500;
+  padding: 10px;
+}
+
+.footer li a{
+  text-decoration: none;
+  color: #dadada;
+}
+
+.imga img{
+  width: 140px;
+  
+}
+
+@media(max-width: 600px){
+  .navbar{
+    width: 100%;
+    height: 90px;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-family: "Nunito Sans"  ; 
+  }
+  
+  ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .navbar li{
+    font-size: 37px;
+    list-style-type: none;
+    font-weight: 500;
+    /* display: inline-block; */
+    /* width: 100%; */
+    align-items: center;
+    /* justify-content: space-between; */
+  }
+  
+  .navbar li a{
+    text-decoration: none;
+    color: #dadada;
+  }
+  .tdimension {
+    width: 335px;
+    height: 240px;
+    margin: 20px auto 40px auto;
+    perspective: 1000px;
+  }
+  .footer{
+    width: 100%;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .footer ul{
+    display: block;
+    justify-content: center; 
+    width: 40%; 
+  }
+  
+  .footer li{
+    list-style-type: none;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px;
+  }
+  
+  .footer li a{
+    text-decoration: none;
+    color: #dadada;
+  }
+  
+  .imga img{
+    width: 100px;
+    
+  }
+  
+}

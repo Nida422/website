@@ -1,0 +1,622 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gilroy";
+}
+
+.main{
+  width: 100%;
+  background-color: #dadada;
+}
+
+.navbar{
+  width: 100%;
+  height: 80px;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  padding: 35px;
+  position: relative; 
+}
+
+.navbar ul{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99999;
+}
+
+.navbar li{
+  font-size: 40px;
+  font-weight: 500;
+  font-family: "Nunito Sans"  ;
+  text-decoration: none;
+  list-style-type: none; 
+}
+
+.navbar .icon{
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 400;
+  color: black; 
+  cursor: pointer;  
+}
+
+.navbar .icon:hover{
+  /* transition: cubic-bezier(0.075, 0.82, 0.165, 1); */
+  transform: translate(all 6s);
+  transition-duration: 6s;
+  scroll-behavior: smooth;
+}
+
+ 
+.hidden-slidebar{ 
+  float: right; 
+  margin-right: 20px;
+  background-color: #780000;
+  color: #dadada;
+  height: 100vh;
+  padding: 20px;
+  top: 0;
+  right: -200px;
+  position: fixed;
+  width: 40%;
+  z-index: 99999;
+  transition: 0.5s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  display: none; 
+}
+.hide{ 
+  opacity: 0;
+  display: none;
+}
+
+.active{ 
+  opacity: 1;
+  display: flex;
+}
+
+ 
+
+.hidden-slidebar .close{  
+  border-bottom: none;
+  height: 40px;
+  width: 20px;
+  /* background-color: white; */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+ 
+
+.close i{
+  width: 20px;
+  height: 20px; 
+  color: black;
+  float: right;
+  cursor: pointer;
+}
+
+.hidden-slidebar div{
+  display: flex;  
+  align-items: center;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 300; 
+  border-bottom: 0.7px solid #dadada;
+  opacity: .7;
+  padding: 10px;
+  transition: 0.2s ease-out;
+}
+
+.hidden-slidebar div a{
+  text-decoration: none;
+  color: #dadada;
+}
+
+.hidden-slidebar div h3{
+  font-size: 25px;
+  font-weight: 200;
+  font-family: "Nunito Sans";
+  padding-left: 23px;
+  padding-top: 10px;
+}
+
+.hidden-slidebar div i{
+  padding-left: 10px;
+  color: #dadada;
+  transform: translate(-57%, -27px);
+
+}
+
+.sec-div{
+  width: 100%;
+  margin-left: 3.6rem;
+  display: flex;
+  flex-wrap: wrap; 
+  position: relative;
+}
+
+.elem{
+  width: 350px;
+  height: 400px; 
+  display: flex;
+  flex-direction: column;
+  margin: 24px;
+  position: relative;
+}
+
+.elem1{
+   width: 100%;
+   height: 100%; 
+   position: relative;
+}
+
+.elem1 img{
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  border-radius: 10px;
+}
+ 
+.elem2{
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background: #253b39b7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  transition: 0.6s;
+}
+.elem2:hover{
+  height: 100%;
+   cursor: pointer;
+  opacity: 1;
+  transform-origin: bottom top;
+}
+.elem2 h1{
+  font-size: 30px;
+  color: #780000;
+  margin-bottom: 15px;
+  font-family: "Rubik";
+  font-weight: 400;
+}
+.elem2 p{
+  font-size: 16px;
+  color: #fff;
+  font-family: "Italianno";
+}
+.elem2 a{
+  text-decoration: none;
+  text-align: center;
+}
+.elem2 > *{
+  transform: translateY(25px);
+  transition: transform 0.6s;
+}
+.elem2:hover > *{
+  transform: translateY(0);
+}
+
+.footer{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer div{
+  width: 80%;
+  border-bottom: 1.4px solid white;
+}
+
+@media(max-width: 600px) {
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gilroy";
+  }
+  
+  .main{
+    width: 100vw;
+    background-color: #dadada;
+  }
+  
+  .navbar{
+    width: 100%;
+    height: 80px;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 35px;
+    position: relative;
+  }
+  
+  .navbar h1{
+    font-size: 40px;
+    font-weight: 500;
+    font-family: "Nunito Sans"  ;
+  }
+  
+  .navbar h2{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    color: black; 
+  }
+  
+  .icon{ 
+    cursor: pointer;
+  }
+  
+  .hidden-slidebar{ 
+    float: right; 
+    margin-right: 20px;
+    background-color: #780000;
+    color: #dadada;
+    height: 100vh;
+    padding: 20px;
+    top: 0;
+    right: -200px;
+    position: fixed;
+    width: -webkit-fill-available;
+    z-index: 99999;
+    transition: right 0.3s ease;
+    opacity: 0;
+  }
+  .hide{ 
+    opacity: 0;
+  }
+  
+  .active{ 
+    opacity: 1;
+  }
+  
+   
+  
+  .hidden-slidebar .close{  
+    border-bottom: none;
+    height: 40px;
+    width: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .close i{
+    width: 20px;
+    height: 20px; 
+    color: black;
+    float: right;
+  }
+ 
+  .hidden-slidebar div{
+    display: flex;  
+    align-items: center;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 300; 
+    border-bottom: 0.7px solid #dadada;
+    opacity: .7;
+    padding: 10px;
+  }
+  
+  .hidden-slidebar div h3{
+    font-size: 25px;
+    font-weight: 200;
+    font-family: "Nunito Sans";
+  }
+  
+  .hidden-slidebar div i{
+    padding-left: 10px;
+    color: #dadada;
+  }
+  
+  .sec-div{
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap; 
+    position: relative; 
+    margin-left: 0px;
+  }
+  
+  .elem{
+    width: 370px;
+    height: 330px; 
+    display: flex;
+    flex-direction: column;
+    /* margin: 24px; */
+    position: relative;
+  }
+  
+  .elem1{
+     width: 100%;
+     height: 100%; 
+     position: relative;
+  }
+  
+  .elem1 img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    border-radius: 10px;
+  }
+   
+  .elem2{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: #253b39b7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.6s;
+  }
+  .elem2:hover{
+    height: 100%;
+     cursor: pointer;
+    opacity: 1;
+    transform-origin: bottom top;
+  }
+  .elem2 h1{
+    font-size: 30px;
+    color: #780000;
+    margin-bottom: 15px;
+    font-family: "Rubik";
+    font-weight: 400;
+  }
+  .elem2 p{
+    font-size: 16px;
+    color: #fff;
+    font-family: "Italianno";
+  }
+  .elem2 a{
+    text-decoration: none;
+    text-align: center;
+  }
+  .elem2 > *{
+    transform: translateY(25px);
+    transition: transform 0.6s;
+  }
+  .elem2:hover > *{
+    transform: translateY(0);
+  }
+  
+  .footer{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .footer div{
+    width: 80%;
+    border-bottom: 1.4px solid white;
+  }
+}
+@media(max-width: 768px) {
+  .sec-div{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; 
+    position: relative;  
+  }
+  
+  .elem{
+    width: 320px;
+    height: 360px; 
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    margin: 24px;
+    position: relative;
+  }
+  
+  .elem1{
+     width: 100%;
+     height: 100%; 
+     position: relative;
+  }
+  
+  .elem1 img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    border-radius: 10px;
+  }
+   
+  .elem2{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: #253b39b7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.6s;
+  }
+  .elem2:hover{
+    height: 100%;
+     cursor: pointer;
+    opacity: 1;
+    transform-origin: bottom top;
+  }
+  .elem2 h1{
+    font-size: 30px;
+    color: #780000;
+    margin-bottom: 15px;
+    font-family: "Rubik";
+    font-weight: 400;
+  }
+  .elem2 p{
+    font-size: 16px;
+    color: #fff;
+    font-family: "Italianno";
+  }
+  .elem2 a{
+    text-decoration: none;
+    text-align: center;
+  }
+  .elem2 > *{
+    transform: translateY(25px);
+    transition: transform 0.6s;
+  }
+  .elem2:hover > *{
+    transform: translateY(0);
+  }
+
+  .hidden-slidebar{ 
+    float: right; 
+    margin-right: 20px;
+    background-color: #780000;
+    color: #dadada;
+    height: 100vh;
+    padding: 20px;
+    top: 0;
+    right: -200px;
+    position: fixed;
+    width: -webkit-fill-available;
+    z-index: 99999;
+    transition: right 0.3s ease;
+    opacity: 0;
+  }
+  .hide{ 
+    opacity: 0;
+  }
+  
+  .active{ 
+    opacity: 1;
+  }
+
+  .close i{
+    width: 20px;
+    height: 20px; 
+    color: black;
+    float: right;
+  }
+  
+}
+@media(max-width: 1200px) {
+  .sec-div{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; 
+    position: relative;    
+  }
+  
+  .elem{
+    width: 380px;
+    height: 370px; 
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    margin: 40px;
+    position: relative;
+  }
+  
+  .elem1{
+     width: 100%;
+     height: 100%; 
+     position: relative;
+  }
+  
+  .elem1 img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    border-radius: 10px;
+  }
+   
+  .elem2{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: #253b39b7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.6s;
+  }
+  .elem2:hover{
+    height: 100%;
+     cursor: pointer;
+    opacity: 1;
+    transform-origin: bottom top;
+  }
+  .elem2 h1{
+    font-size: 30px;
+    color: #780000;
+    margin-bottom: 15px;
+    font-family: "Rubik";
+    font-weight: 400;
+  }
+  .elem2 p{
+    font-size: 16px;
+    color: #fff;
+    font-family: "Italianno";
+  }
+  .elem2 a{
+    text-decoration: none;
+    text-align: center;
+  }
+  .elem2 > *{
+    transform: translateY(25px);
+    transition: transform 0.6s;
+  }
+  .elem2:hover > *{
+    transform: translateY(0);
+  }
+  
+  .hidden-slidebar{ 
+    float: right; 
+    margin-right: 20px;
+    background-color: #780000;
+    color: #dadada;
+    height: 100vh;
+    padding: 20px;
+    top: 0;
+    right: -200px;
+    position: fixed;
+    width: -webkit-fill-available;
+    z-index: 99999;
+    transition: right 0.3s ease;
+    opacity: 0;
+  }
+  .hide{ 
+    opacity: 0;
+  }
+  
+  .active{ 
+    opacity: 1;
+  }
+  
+}

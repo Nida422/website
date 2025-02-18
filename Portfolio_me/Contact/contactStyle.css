@@ -1,0 +1,181 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS' ;
+}
+
+.main{
+  width: 100%;
+  height: 100vh;
+  background-color: #282727;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.second-cont #registrationForm{  
+  border-radius: 20px;
+  background-color: #750b0b44;
+  box-shadow: 2px 2px 5px 5px #ae83838e;
+  opacity: 1;  
+  display: flex;
+  flex-direction: column;   
+  /* justify-content: center; */
+  padding: 4rem; 
+  color: white;
+} 
+
+#registrationForm i{
+   font-size: 17px;
+   color: white; 
+   float: inline-end;
+}  
+
+h1{
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 400;
+  color: white;
+}
+
+input{
+  min-width: 40rem;
+  font-size: 18px;
+  font-weight: 300;
+  color: gray;
+  padding: .3rem 1rem;
+  border-radius: 10px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.852);
+}
+.discription{
+  min-width: 40rem;
+  height: 5.6rem; 
+  text-align: start;
+  padding-top: 0px;
+  background-color: rgba(255, 255, 255, 0.852);
+}
+label{
+  font-size: 20px;
+  font-weight: 400;
+  padding: 8px;
+  color: white;
+}
+
+.submit{
+  min-width: 20rem;
+  font-size: 18px;
+  font-weight: 300;
+  color: white;
+  background: transparent;
+  border-radius: 20px;
+  border: 1.7px solid white;
+  padding: .8rem 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.submit a{
+  text-decoration: none;
+  color: white;
+}
+.submit button{
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  color: white;
+}
+
+@media (max-width:600px) {
+  *{
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS' ;
+  }
+  body{
+    align-items: center;
+  }
+  
+  .main{
+     height: 100vh;
+    /* height: 100vh; */ 
+    /* background-color: #282727; */
+    display: flex;
+    /* flex-direction: column\; */
+    justify-content: center;
+    align-items: center; 
+  }
+  
+  .second-cont #registrationForm{   
+    width: 85vw;
+    /* height: 100%; */
+    border-radius: 10px;
+    background-color: #750b0b44;
+    box-shadow: 2px 2px 5px 5px #ae83838e; 
+    display: flex;
+    flex-direction: column;   
+    justify-content: center; 
+    color: white; 
+  } 
+
+    
+  
+  h1{
+    text-align: center;
+    font-size: 33px;
+    font-weight: 400;
+    color: white;
+    margin-top: 7px;
+  }
+  
+  input{
+    min-width: 80%;
+    font-size: 18px;
+    font-weight: 300;
+    color: gray;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.852);
+  }
+  .discription{
+    min-width: 80%;
+    height: 50px; 
+    text-align: start;
+    padding-top: 6px;
+    background-color: rgba(255, 255, 255, 0.852);
+  }
+  label{
+    font-size: 18px;
+    font-weight: 400;
+    padding: 10px;
+    color: white;
+  }
+  
+  .submit{
+    min-width: 80%;
+    font-size: 18px;
+    font-weight: 300;
+    color: white;
+    background: transparent;
+    border-radius: 20px;
+    border: 1.7px solid white;
+    padding: .8rem 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .submit a{
+    text-decoration: none;
+    color: white;
+  }
+  .submit button{
+    background: transparent;
+    border: none;
+    font-size: 18px;
+    color: white;
+  }
+}

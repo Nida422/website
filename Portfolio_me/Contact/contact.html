@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contect Page</title>
+  <link rel="shortcut icon" href="Images/Simple Minimalist Nature Organic Business Logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="contactStyle.css">
+</head>
+<body>
+  <div class="main"> 
+
+    <div class="second-cont" id="second-cont" style="background-color: none;" >
+       
+      <form id="registrationForm" novalidate> 
+       <a href="/index.html"><i class="fa-solid fa-house"></i></a>  
+      <h1 class="reveal">Write A Message</h1>
+       
+      <label for="username">Enter Name:</label>
+      <input type="text" id="username" name="username" placeholder="Enter your name" required minlength="3" maxlength="15">
+      <span class="error" id="usernameError"></span>
+
+      <label for="number" >Enter Phone Number:</label>
+      <input type="number" id="number" name="number" required minlength="6" placeholder="Enter your Phone Number" required>
+      <span class="error" id="passwordError"></span>
+
+      <label for="email" >Enter Email:</label>
+      <input type="email" id="email" name="emial" placeholder="Enter your Email" required>
+      <span class="error" id="emailError"></span>
+
+
+      <label for="input">Enter Message:</label>
+      <input type="text" class="discription" id="message" placeholder="Write a Message or conntect me.....">
+      <div class="submit">
+        <a href="#"><button type="submit" onclick="sendMail(event)">Submit</button></a>
+      </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script>
+    emailjs.init("jvnU-zJ-w1U-Y_V9l");  
+</script>
+  <script src="contact.js"></script>
+</body>
+</html>
